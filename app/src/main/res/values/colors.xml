@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 应用图标背景(白底衬托"广东外语外贸大学"图片前景) -->
+    <color name="ic_launcher_background">#FFFFFF</color>
+
+    <!-- 小组件颜色(浅色) -->
+    <color name="widget_background">#F2F5FA</color>
+    <color name="widget_border">#1F000000</color>
+    <color name="widget_text_primary">#1B1B1F</color>
+    <color name="widget_text_secondary">#5C5E64</color>
+    <color name="widget_text_accent">#1565C0</color>
+</resources>

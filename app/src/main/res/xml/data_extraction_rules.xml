@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 12+ 数据提取规则:云备份与设备间迁移均保留课表数据库,排除可重建的小组件快照 -->
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="database" path="timetable.db" />
+        <exclude domain="database" path="widget_snapshot.db" />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="database" path="timetable.db" />
+        <exclude domain="database" path="widget_snapshot.db" />
+    </device-transfer>
+</data-extraction-rules>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 11 及以下的全量备份规则:课表数据随系统备份,小组件快照排除(可随时重建) -->
+<full-backup-content>
+    <include domain="database" path="timetable.db" />
+    <exclude domain="database" path="widget_snapshot.db" />
+</full-backup-content>

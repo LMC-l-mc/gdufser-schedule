@@ -1,0 +1,269 @@
+<resources>
+    <string name="app_name">廣外課表</string>
+    <string name="nav_today">今日</string>
+    <string name="nav_schedule">課表</string>
+    <string name="nav_settings">設定</string>
+    <string name="today_placeholder">今日頁面將在後續階段提供課程總覽。</string>
+    <string name="schedule_placeholder">課表頁面將在後續階段提供週檢視。</string>
+    <string name="settings_placeholder">設定頁面將在後續階段提供個人化選項。</string>
+
+    <!-- 通用 -->
+    <string name="action_cancel">取消</string>
+    <string name="action_save">儲存</string>
+    <string name="action_delete">刪除</string>
+    <string name="action_more">更多操作</string>
+    <string name="action_ok">確定</string>
+    <string name="cd_back">返回</string>
+    <string name="cd_move_up">上移</string>
+    <string name="cd_move_down">下移</string>
+
+    <!-- 設定首頁 -->
+    <string name="settings_course_tables">課表管理</string>
+    <string name="settings_course_tables_desc">建立、複製、切換與刪除課表</string>
+    <string name="settings_time_slots">作息時間管理</string>
+    <string name="settings_time_slots_desc">管理作息方案與各大節時間</string>
+    <string name="settings_no_course_table_hint">你還沒有課表。建立第一個課表，開始你的新學期吧！</string>
+    <string name="settings_create_first_course_table">建立第一個課表</string>
+
+    <!-- 課表管理 -->
+    <string name="course_table_new">新增課表</string>
+    <string name="course_table_edit">編輯課表</string>
+    <string name="course_table_none_hint">還沒有課表，點選右下角按鈕新增</string>
+    <string name="course_table_name">課表名稱</string>
+    <string name="course_table_term_start_date">學期開始日期</string>
+    <string name="course_table_date_hint">例如 2026-02-25</string>
+    <string name="course_table_total_weeks">總週數</string>
+    <string name="course_table_first_day">每週第一天</string>
+    <string name="course_table_scheme">作息方案</string>
+    <string name="course_table_weeks_format">%1$d 週</string>
+    <string name="course_table_current_badge">目前</string>
+    <string name="course_table_duplicate">複製課表</string>
+    <string name="course_table_delete">刪除課表</string>
+    <string name="course_table_copy_suffix">副本</string>
+    <string name="course_table_delete_title">刪除課表</string>
+    <string name="course_table_delete_with_courses_message">將刪除「%1$s」及其 %2$d 門課程，此操作不可復原。</string>
+    <string name="course_table_delete_empty_message">將刪除「%1$s」，此操作不可復原。</string>
+    <string name="cd_course_table_switch">切換到此課表</string>
+
+    <!-- 課表表單錯誤 -->
+    <string name="error_course_table_name_blank">請輸入課表名稱</string>
+    <string name="error_course_table_date_blank">請輸入學期開始日期</string>
+    <string name="error_course_table_date_format">日期格式應為 yyyy-MM-dd</string>
+    <string name="error_course_table_date_invalid">日期不合法，請檢查年月日</string>
+    <string name="error_course_table_weeks_blank">請輸入總週數</string>
+    <string name="error_course_table_weeks_invalid">總週數應為整數</string>
+    <string name="error_course_table_weeks_range">總週數應在 1–60 之間</string>
+    <string name="error_course_table_scheme_not_selected">請選擇作息方案</string>
+    <string name="course_table_no_scheme_hint">請先在「作息時間管理」中建立作息方案</string>
+
+    <!-- 作息方案管理 -->
+    <string name="time_slot_scheme_new">新增作息方案</string>
+    <string name="time_slot_scheme_none_hint">還沒有作息方案，點選右下角按鈕新增</string>
+    <string name="time_slot_scheme_name_label">方案名稱</string>
+    <string name="time_slot_scheme_duplicate">複製方案</string>
+    <string name="time_slot_scheme_delete">刪除方案</string>
+    <string name="time_slot_scheme_delete_title">刪除作息方案</string>
+    <string name="time_slot_scheme_delete_message">將刪除方案「%1$s」及其全部 %2$d 個時間段，此操作不可復原。</string>
+    <string name="time_slot_scheme_in_use_format">被 %1$d 個課表使用，不可刪除</string>
+    <string name="time_slot_scheme_slot_count_format">%1$d 個時間段</string>
+    <string name="time_slot_scheme_in_use_delete_hint">該方案仍被課表使用，無法刪除。請先修改相關課表的作息方案。</string>
+
+    <!-- 時間段 -->
+    <string name="time_slot_add">新增時間段</string>
+    <string name="time_slot_edit">編輯時間段</string>
+    <string name="time_slot_delete">刪除時間段</string>
+    <string name="time_slot_delete_title">刪除時間段</string>
+    <string name="time_slot_delete_message">將刪除「%1$s」（%2$s–%3$s），此操作不可復原。</string>
+    <string name="time_slot_name">名稱</string>
+    <string name="time_slot_start">開始時間</string>
+    <string name="time_slot_end">結束時間</string>
+    <string name="time_slot_time_hint">例如 08:30</string>
+    <string name="time_slot_empty_hint">該方案還沒有時間段，點選右下角按鈕新增</string>
+
+    <!-- 時間段表單錯誤 -->
+    <string name="error_time_slot_start_format">開始時間格式應為 HH:mm</string>
+    <string name="error_time_slot_end_format">結束時間格式應為 HH:mm</string>
+    <string name="error_time_slot_order">開始時間必須早於結束時間</string>
+    <string name="error_time_slot_overlap">與「%1$s」時間重疊</string>
+
+    <!-- 每週第一天選項 -->
+    <string-array name="weekday_names">
+        <item>週一</item>
+        <item>週二</item>
+        <item>週三</item>
+        <item>週四</item>
+        <item>週五</item>
+        <item>週六</item>
+        <item>週日</item>
+    </string-array>
+
+    <!-- 課程管理 -->
+    <string name="settings_courses">課程管理</string>
+    <string name="settings_courses_desc">新增、編輯、複製與搜尋課程</string>
+    <string name="course_none_hint">還沒有課程，點選右下角按鈕新增</string>
+    <string name="course_search_hint">搜尋課程名、教師或地點</string>
+    <string name="course_list_empty_search">沒有符合的課程</string>
+    <string name="course_new">新增課程</string>
+    <string name="course_edit">編輯課程</string>
+    <string name="course_detail">課程詳情</string>
+    <string name="course_duplicate">複製課程</string>
+    <string name="course_delete">刪除課程</string>
+    <string name="course_delete_title">刪除課程</string>
+    <string name="course_delete_message">將刪除「%1$s」，此操作不可復原。</string>
+    <string name="course_copy_suffix">副本</string>
+    <string name="course_teacher_location_format">%1$s · %2$s</string>
+    <string name="course_no_current_table_hint">請先在「課表管理」中建立並選擇課表，再管理課程。</string>
+    <string name="course_no_time_slots_hint">目前課表的作息方案沒有時間段，請先在「作息時間管理」中新增。</string>
+
+    <!-- 課程表單 -->
+    <string name="course_name">課程名稱</string>
+    <string name="course_teacher">教師</string>
+    <string name="course_location">地點</string>
+    <string name="course_remark">備註</string>
+    <string name="course_remark_hint">課程備註資訊（選填，支援多行）</string>
+    <string name="course_color">課程顏色</string>
+    <string name="course_occurrences">上課安排</string>
+    <string name="course_add_occurrence">新增上課安排</string>
+    <string name="course_edit_occurrence">編輯上課安排</string>
+    <string name="course_no_occurrence_hint">暫無上課安排，點選「新增上課安排」按鈕新增</string>
+    <string name="course_weekday">星期</string>
+    <string name="course_start_slot">開始大節</string>
+    <string name="course_end_slot">結束大節</string>
+    <string name="course_week_mode">週次規則</string>
+    <string name="course_custom_weeks">生效週次</string>
+    <string name="week_mode_every">每週</string>
+    <string name="week_mode_odd">單週</string>
+    <string name="week_mode_even">雙週</string>
+    <string name="week_mode_custom">自訂</string>
+    <string name="course_slot_option_format">%1$s（%2$s–%3$s）</string>
+    <string name="course_week_item_format">第 %1$d 週</string>
+    <string name="conflict_dialog_title">發現時間衝突</string>
+    <string name="conflict_dialog_body">儲存後與以下課程時間重疊，是否仍然儲存？</string>
+    <string name="conflict_item_format">%1$s · %2$s</string>
+    <string name="conflict_save_anyway">仍然儲存</string>
+
+    <!-- 課程表單錯誤 -->
+    <string name="error_course_name_blank">請輸入課程名稱</string>
+    <string name="error_course_no_occurrence">請至少新增一個上課安排</string>
+    <string name="error_occurrence_weekday">星期選擇無效</string>
+    <string name="error_occurrence_slot_range">大節選擇超出作息範圍</string>
+    <string name="error_occurrence_slot_order">開始大節不能晚於結束大節</string>
+    <string name="error_custom_weeks_empty">自訂週次請至少選擇一個生效週次</string>
+
+    <!-- 課程卡片與備註編輯 -->
+    <string name="course_card_teacher_format">教師：%1$s</string>
+    <string name="course_card_location_format">地點：%1$s</string>
+    <string name="course_card_single_slot_format">%1$s %2$s–%3$s</string>
+    <string name="course_card_range_slot_format">%1$s至%2$s %3$s–%4$s</string>
+    <string name="course_card_remark_show">備註</string>
+    <string name="course_card_remark_add">新增備註</string>
+    <string name="course_remark_editor_title">課程備註</string>
+
+    <!-- 週課表 -->
+    <string name="timetable_prev_week">上一週</string>
+    <string name="timetable_next_week">下一週</string>
+    <string name="timetable_week_picker_title">選擇週次</string>
+    <string name="timetable_term_not_started">學期尚未開始</string>
+    <string name="timetable_term_ended">學期已結束</string>
+    <string name="timetable_week_out_of_range">所選週次超出學期範圍</string>
+
+    <!-- 今日 -->
+    <string name="today_now_course">正在上課</string>
+    <string name="today_next_course">下一節</string>
+    <string name="today_next_course_with_time_format">下一節 · %1$s 開始</string>
+    <string name="today_all_courses">今日課程</string>
+    <string name="today_tomorrow_courses">明日課程</string>
+    <string name="today_no_course_hint">今天沒有課程</string>
+    <string name="today_no_course_tomorrow_hint">明天沒有課程</string>
+    <string name="today_term_not_started_hint">學期尚未開始，開課後這裡將展示當日課程。</string>
+    <string name="today_term_ended_hint">學期已結束。</string>
+
+    <!-- 外觀設定 -->
+    <string name="settings_appearance">外觀與主題</string>
+    <string name="settings_appearance_desc">主題、動態顏色與課程卡片樣式</string>
+    <string name="appearance_section_theme">主題</string>
+    <string name="appearance_theme_mode">主題模式</string>
+    <string name="appearance_theme_system">跟隨系統</string>
+    <string name="appearance_theme_light">淺色</string>
+    <string name="appearance_theme_dark">深色</string>
+    <string name="appearance_dynamic_color">動態顏色</string>
+    <string name="appearance_dynamic_color_desc">從桌布取色（Android 12 及以上）</string>
+    <string name="appearance_dynamic_color_unsupported">需要 Android 12 及以上系統</string>
+    <string name="appearance_section_card">課程卡片</string>
+    <string name="appearance_card_corner_radius">卡片圓角</string>
+    <string name="appearance_card_spacing">卡片間距</string>
+    <string name="appearance_card_opacity">卡片透明度</string>
+    <string name="appearance_remark_lines">備註預覽行數</string>
+    <string name="appearance_remark_lines_one">一行</string>
+    <string name="appearance_remark_lines_two">兩行</string>
+    <string name="appearance_section_timetable">課表</string>
+    <string name="appearance_row_height">課表行高</string>
+    <string name="appearance_show_teacher">顯示教師</string>
+    <string name="appearance_show_location">顯示地點</string>
+    <string name="appearance_show_time">顯示實際時間</string>
+    <string name="appearance_dp_format">%1$d dp</string>
+    <string name="appearance_percent_format">%1$d%%</string>
+
+    <!-- 備份與匯出 -->
+    <string name="settings_backup">備份與匯出</string>
+    <string name="settings_backup_desc">JSON 備份還原與 ICS 日曆匯出，全程離線</string>
+    <string name="backup_export_json">匯出 JSON 備份</string>
+    <string name="backup_export_json_desc">包含全部課表、作息方案、課程與外觀設定</string>
+    <string name="backup_restore">從備份還原</string>
+    <string name="backup_restore_desc">選擇 JSON 備份檔案，支援新增、合併與覆蓋匯入</string>
+    <string name="backup_export_ics">匯出 ICS 日曆</string>
+    <string name="backup_export_ics_desc">把目前課表匯出為日曆事件（iCal 格式）</string>
+    <string name="backup_result_success">操作成功</string>
+    <string name="backup_result_failed">操作失敗：%1$s</string>
+    <string name="backup_bad_file">備份檔案無效或格式不相容，未修改任何資料</string>
+    <string name="backup_restore_success">還原完成</string>
+    <string name="backup_choose_mode_title">選擇匯入方式</string>
+    <string name="backup_import_preview">將匯入 %1$d 個課表、%2$d 門課程</string>
+    <string name="backup_mode_append">新增匯入</string>
+    <string name="backup_mode_append_desc">保留現有資料，備份內容以副本追加</string>
+    <string name="backup_mode_merge">合併匯入</string>
+    <string name="backup_mode_merge_desc">保留現有資料，相同的作息方案沿用現有</string>
+    <string name="backup_mode_overwrite">覆蓋現有資料</string>
+    <string name="backup_mode_overwrite_desc">現有資料將被全部刪除並替換為備份內容</string>
+    <string name="backup_overwrite_confirm_title">確認覆蓋</string>
+    <string name="backup_overwrite_confirm_msg">將刪除現有全部課表、作息方案與課程並以備份替換，此操作不可復原。確定繼續？</string>
+    <string name="backup_no_current_table">請先在「課表管理」中建立並選擇課表，再匯出 ICS。</string>
+
+    <!-- 清除資料 -->
+    <string name="backup_clear_data">清除全部資料</string>
+    <string name="backup_clear_data_desc">刪除所有課表、作息方案、課程與設定，回復到初始狀態</string>
+    <string name="backup_clear_data_confirm_title">確認清除</string>
+    <string name="backup_clear_data_confirm_msg">將刪除全部課表、作息方案、課程與外觀設定，此操作不可復原。確定繼續？</string>
+    <string name="backup_clear_data_success">已清除全部資料</string>
+
+    <!-- 小工具 -->
+    <string name="widget_description">顯示今日課程與下一節課程</string>
+    <string name="widget_title_loading">今日課程</string>
+    <string name="widget_title_format">%1$s %2$s</string>
+    <string name="widget_next_format">下一節 %1$s %2$s</string>
+    <string name="widget_loading">正在載入今日課程…</string>
+    <string name="widget_no_courses">今日無課程</string>
+    <string name="widget_refresh_failed">重新整理失敗，點擊進入應用</string>
+    <string name="widget_has_remark">有備註</string>
+    <string name="widget_item_time_format">%1$s %2$s</string>
+    <string name="widget_item_teacher_format">教師：%1$s</string>
+    <string name="widget_item_location_format">地點：%1$s</string>
+
+    <!-- 關於與授權 -->
+    <string name="settings_about">關於與開源授權</string>
+    <string name="settings_about_desc">版本資訊與第三方開源元件授權</string>
+    <string name="contact_me">聯絡我</string>
+    <string name="about_version_format">版本 %1$s</string>
+    <string name="about_intro">廣外課表是一款完全離線的課程表應用：不含帳號、伺服器、廣告或任何網路請求，資料只儲存在你的裝置上。</string>
+    <string name="about_licenses_title">開源元件授權</string>
+    <string-array name="about_license_items">
+        <item>Jetpack Compose (Apache-2.0)</item>
+        <item>AndroidX / Material 3 (Apache-2.0)</item>
+        <item>Room (Apache-2.0)</item>
+        <item>Navigation Compose (Apache-2.0)</item>
+        <item>Koin (Apache-2.0)</item>
+        <item>Kotlin Coroutines (Apache-2.0)</item>
+        <item>DataStore (Apache-2.0)</item>
+        <item>org.json (MIT-style)</item>
+    </string-array>
+</resources>
