@@ -16,7 +16,7 @@
 
 ## 截图
 
-（截图位置：`docs/screenshots/`。构建并安装后可在真机添加小组件与截屏后放入该目录。）
+（截图位置：`docs/screenshots/`。构建并安装后可在真机截屏放入该目录。）
 
 ## 构建
 
@@ -43,13 +43,13 @@
 
 - 全部数据（课表/作息/课程/设置）存储在应用私有 Room 数据库 `timetable.db`，不出设备。
 - 无任何网络权限与第三方 SDK：不采集、不上传、无广告、无埋点。
-- 系统备份：`timetable.db` 随 Android 系统备份/迁移（方便换机），小组件快照库不备份（可随时重建）。
+- 系统备份：`timetable.db` 随 Android 系统备份/迁移（方便换机）。
 - 备份文件（JSON）由你主动导出到自选位置，请自行妥善保存，其中包含课程备注等个人信息。
 
 ## 架构
 
 - Kotlin + Compose Material 3（单 Activity）、MVVM + Kotlin Coroutines + Flow
-- Room（主库）与独立小组件快照库、DataStore（预留）
+- Room（`timetable.db`）、DataStore（预留）
 - Koin 依赖注入、Navigation Compose
 - 纯 Kotlin 领域层（周次计算、冲突检测、备份格式、ICS 生成）为未来 Kotlin Multiplatform 迁移预留
 
