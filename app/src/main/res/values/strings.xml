@@ -229,19 +229,6 @@
     <string name="backup_overwrite_confirm_msg">将删除现有全部课表、作息方案与课程并以备份替换,此操作不可撤销。确定继续?</string>
     <string name="backup_no_current_table">请先在“课表管理”中创建并选择课表,再导出 ICS。</string>
 
-    <!-- 小组件 -->
-    <string name="widget_description">显示今日课程与下一节课程</string>
-    <string name="widget_title_loading">今日课程</string>
-    <string name="widget_title_format">%1$s %2$s</string>
-    <string name="widget_next_format">下一节 %1$s %2$s</string>
-    <string name="widget_loading">正在加载今日课程…</string>
-    <string name="widget_no_courses">今日无课程</string>
-    <string name="widget_refresh_failed">刷新失败,点击进入应用</string>
-    <string name="widget_has_remark">有备注</string>
-    <string name="widget_item_time_format">%1$s %2$s</string>
-    <string name="widget_item_teacher_format">教师:%1$s</string>
-    <string name="widget_item_location_format">地点:%1$s</string>
-
     <!-- 关于与许可 -->
     <string name="settings_about">关于与开源许可</string>
     <string name="settings_about_desc">版本信息与第三方开源组件许可</string>

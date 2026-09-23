@@ -236,19 +236,6 @@
     <string name="backup_clear_data_confirm_msg">將刪除全部課表、作息方案、課程與外觀設定，此操作不可復原。確定繼續？</string>
     <string name="backup_clear_data_success">已清除全部資料</string>
 
-    <!-- 小工具 -->
-    <string name="widget_description">顯示今日課程與下一節課程</string>
-    <string name="widget_title_loading">今日課程</string>
-    <string name="widget_title_format">%1$s %2$s</string>
-    <string name="widget_next_format">下一節 %1$s %2$s</string>
-    <string name="widget_loading">正在載入今日課程…</string>
-    <string name="widget_no_courses">今日無課程</string>
-    <string name="widget_refresh_failed">重新整理失敗，點擊進入應用</string>
-    <string name="widget_has_remark">有備註</string>
-    <string name="widget_item_time_format">%1$s %2$s</string>
-    <string name="widget_item_teacher_format">教師：%1$s</string>
-    <string name="widget_item_location_format">地點：%1$s</string>
-
     <!-- 關於與授權 -->
     <string name="settings_about">關於與開源授權</string>
     <string name="settings_about_desc">版本資訊與第三方開源元件授權</string>

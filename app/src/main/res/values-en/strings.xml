@@ -236,19 +236,6 @@
     <string name="backup_clear_data_confirm_msg">All timetables, schemes, courses and appearance settings will be deleted. This cannot be undone. Continue?</string>
     <string name="backup_clear_data_success">All data cleared</string>
 
-    <!-- Widget -->
-    <string name="widget_description">Shows today\'s courses and the next class</string>
-    <string name="widget_title_loading">Today\'s courses</string>
-    <string name="widget_title_format">%1$s %2$s</string>
-    <string name="widget_next_format">Next %1$s %2$s</string>
-    <string name="widget_loading">Loading today\'s courses…</string>
-    <string name="widget_no_courses">No courses today</string>
-    <string name="widget_refresh_failed">Refresh failed. Tap to open the app</string>
-    <string name="widget_has_remark">Has notes</string>
-    <string name="widget_item_time_format">%1$s %2$s</string>
-    <string name="widget_item_teacher_format">Teacher: %1$s</string>
-    <string name="widget_item_location_format">Location: %1$s</string>
-
     <!-- About & licenses -->
     <string name="settings_about">About &amp; open-source licenses</string>
     <string name="settings_about_desc">Version info and third-party open-source licenses</string>

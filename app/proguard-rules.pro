@@ -19,7 +19,3 @@
 # Koin 4 基于 Kotlin反射构建依赖图,保留模块声明所需的元数据
 -dontwarn org.koin.**
 -keep class org.koin.core.** { *; }
-
-# 小组件 Provider/Service 由系统按类名反射实例化
--keep class com.gdufs.schedule.ui.widget.TodayWidgetProvider { *; }
--keep class com.gdufs.schedule.ui.widget.TodayWidgetRemoteViewsService { *; }

@@ -8,7 +8,6 @@ import com.gdufs.schedule.data.db.CourseTableDao
 import com.gdufs.schedule.data.db.DefaultScheduleInitializer
 import com.gdufs.schedule.data.db.TimeSlotDao
 import com.gdufs.schedule.data.db.TimeSlotSchemeDao
-import com.gdufs.schedule.data.db.WidgetSnapshotDatabase
 import com.gdufs.schedule.data.repository.CourseRepository
 import com.gdufs.schedule.data.repository.CourseTableRepository
 import com.gdufs.schedule.data.repository.DefaultCourseRepository
@@ -17,7 +16,6 @@ import com.gdufs.schedule.data.repository.DefaultTimeSlotRepository
 import com.gdufs.schedule.data.repository.BackupRepository
 import com.gdufs.schedule.data.repository.DefaultBackupRepository
 import com.gdufs.schedule.data.repository.TimeSlotRepository
-import com.gdufs.schedule.data.repository.WidgetSnapshotSyncer
 import com.gdufs.schedule.data.settings.SettingsRepository
 import com.gdufs.schedule.data.settings.SettingsRepositoryImpl
 import com.gdufs.schedule.ui.screen.settings.AppearanceViewModel
@@ -36,7 +34,6 @@ import org.koin.dsl.module
  */
 val appModule = module {
     single { AppDatabase.build(androidContext()) }
-    single { WidgetSnapshotDatabase.build(androidContext()) }
     single<CourseTableDao> { get<AppDatabase>().courseTableDao() }
     single<TimeSlotSchemeDao> { get<AppDatabase>().timeSlotSchemeDao() }
     single<TimeSlotDao> { get<AppDatabase>().timeSlotDao() }
@@ -53,7 +50,6 @@ val appModule = module {
     single<TimeSlotRepository> { DefaultTimeSlotRepository(get(), get(), get(), get()) }
     single<SettingsRepository> { SettingsRepositoryImpl(get()) }
     single<BackupRepository> { DefaultBackupRepository(get()) }
-    single<WidgetSnapshotSyncer> { WidgetSnapshotSyncer(androidContext(), get(), get()) }
 
     viewModel { CourseViewModel(get(), get(), get(), get()) }
     viewModel { CourseTableViewModel(get(), get(), get()) }

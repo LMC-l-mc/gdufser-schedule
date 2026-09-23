@@ -11,7 +11,6 @@ import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -60,18 +59,11 @@ private val topLevelDestinations = listOf(
 )
 
 @Composable
-fun ScheduleNavHost(startCourseId: Long? = null) {
+fun ScheduleNavHost() {
     val navController = rememberNavController()
     val backStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = backStackEntry?.destination?.route
     val isTopLevel = currentRoute in topLevelDestinations.map { it.route }
-
-    // 小组件点击等外部入口:直接导航到对应课程详情
-    LaunchedEffect(startCourseId) {
-        if (startCourseId != null && startCourseId > 0) {
-            navController.navigate(courseDetailRoute(startCourseId))
-        }
-    }
 
     Scaffold(
         bottomBar = {

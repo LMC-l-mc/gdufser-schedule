@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- 小组件颜色(深色):随系统深浅自动切换,保证深色模式文字对比度 -->
-    <color name="widget_background">#23262E</color>
-    <color name="widget_border">#33FFFFFF</color>
-    <color name="widget_text_primary">#ECECF4</color>
-    <color name="widget_text_secondary">#B7B9C0</color>
-    <color name="widget_text_accent">#90CAF9</color>
-</resources>
