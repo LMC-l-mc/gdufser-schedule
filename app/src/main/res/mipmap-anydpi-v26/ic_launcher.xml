@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  应用图标:整幅使用 picture/应用封面.png("明德尚行 学贯中西"印章封面)。
+  图片自带完整背景,作为自适应图标的背景层铺满 108x108dp,由桌面启动器按
+  其形状(圆形/圆角方形等)裁剪显示。
+-->
 <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
-    <background android:drawable="@color/ic_launcher_background" />
-    <foreground android:drawable="@drawable/cover_gdufs_inset" />
+    <background android:drawable="@drawable/cover_app" />
 </adaptive-icon>

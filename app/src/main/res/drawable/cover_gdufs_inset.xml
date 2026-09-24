@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-  应用图标前景:将"广东外语外贸大学"校徽整体缩小并居中。
-  Adaptive Icon 前景层为 108x108dp,只有中心直径 66dp 的圆形区域保证不被
-  各桌面启动器裁剪。这里四边各 inset 24%,使校徽直径约 56dp,完整落在安全区内。
--->
-<inset xmlns:android="http://schemas.android.com/apk/res/android"
-    android:drawable="@drawable/cover_gdufs"
-    android:inset="24%" />

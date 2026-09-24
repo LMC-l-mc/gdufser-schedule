@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GDUFS Timetable</string>
+    <string name="app_name">gdufser-schedule</string>
     <string name="nav_today">Today</string>
     <string name="nav_schedule">Timetable</string>
     <string name="nav_settings">Settings</string>
@@ -241,7 +241,7 @@
     <string name="settings_about_desc">Version info and third-party open-source licenses</string>
     <string name="contact_me">Contact me</string>
     <string name="about_version_format">Version %1$s</string>
-    <string name="about_intro">GDUFS Timetable is a fully offline timetable app: no accounts, servers, ads or any network requests. Your data stays on your device.</string>
+    <string name="about_intro">gdufser-schedule is a fully offline timetable app: no accounts, servers, ads or any network requests. Your data stays on your device.</string>
     <string name="about_licenses_title">Open-source licenses</string>
     <string-array name="about_license_items">
         <item>Jetpack Compose (Apache-2.0)</item>

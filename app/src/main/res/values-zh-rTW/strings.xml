@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">廣外課表</string>
+    <string name="app_name">gdufser-schedule</string>
     <string name="nav_today">今日</string>
     <string name="nav_schedule">課表</string>
     <string name="nav_settings">設定</string>
@@ -241,7 +241,7 @@
     <string name="settings_about_desc">版本資訊與第三方開源元件授權</string>
     <string name="contact_me">聯絡我</string>
     <string name="about_version_format">版本 %1$s</string>
-    <string name="about_intro">廣外課表是一款完全離線的課程表應用：不含帳號、伺服器、廣告或任何網路請求，資料只儲存在你的裝置上。</string>
+    <string name="about_intro">gdufser-schedule 是一款完全離線的課程表應用：不含帳號、伺服器、廣告或任何網路請求，資料只儲存在你的裝置上。</string>
     <string name="about_licenses_title">開源元件授權</string>
     <string-array name="about_license_items">
         <item>Jetpack Compose (Apache-2.0)</item>

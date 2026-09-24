@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">广外课表</string>
+    <string name="app_name">gdufser-schedule</string>
     <string name="nav_today">今日</string>
     <string name="nav_schedule">课表</string>
     <string name="nav_settings">设置</string>
@@ -234,7 +234,7 @@
     <string name="settings_about_desc">版本信息与第三方开源组件许可</string>
     <string name="contact_me">联系我</string>
     <string name="about_version_format">版本 %1$s</string>
-    <string name="about_intro">广外课表是一款完全离线的课程表应用:不包含账号、服务器、广告或任何网络请求,数据只保存在你的设备上。</string>
+    <string name="about_intro">gdufser-schedule 是一款完全离线的课程表应用:不包含账号、服务器、广告或任何网络请求,数据只保存在你的设备上。</string>
     <string name="about_licenses_title">开源组件许可</string>
     <string-array name="about_license_items">
         <item>Jetpack Compose (Apache-2.0)</item>

@@ -1,4 +1,4 @@
-# 广外课表 (GDUFS Timetable)
+# gdufser-schedule
 
 完全离线的 Android 课程表应用：无账号、无服务器、无广告、无网络请求，数据只保存在你的设备上。
 
