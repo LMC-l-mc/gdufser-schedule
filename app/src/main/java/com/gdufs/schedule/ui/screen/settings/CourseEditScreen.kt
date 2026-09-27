@@ -87,7 +87,7 @@ private fun OccurrenceDraft.toEntity(courseId: Long): CourseOccurrence = CourseO
  * 自上而下依次为课程名称、教师、地点、星期、开始大节、结束大节、周次规律、课程颜色、备注。
  * - 名称/教师/地点/备注为文本输入(弹出键盘);
  * - 星期/开始大节/结束大节为只读下拉字段,点击弹出选项(大节显示完整时间文本);
- * - 周次规律同为点击型字段,弹窗内选择每周/单周/双周/自定义(自定义可选多个生效周次);
+ * - 周次规律同为点击型字段,弹窗内选择每周/单周/双周/自定义周次(自定义可选多个生效周次);
  * - 保存前经 [CourseFormValidator] 校验,并经 [ScheduleQuery.conflictsWith] 检查冲突,
  *   发现冲突时提示用户,允许确认后继续保存;
  * - 编辑已有课程时回填第一条安排,保存后以当前表单替换为单条安排。
@@ -628,11 +628,24 @@ private fun WeekRuleSelectField(
                 modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
                 verticalArrangement = Arrangement.spacedBy(8.dp),
             ) {
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                FlowRow(
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    verticalArrangement = Arrangement.spacedBy(8.dp),
+                ) {
                     FilterChip(
                         selected = weekMode == WeekMode.EVERY_WEEK,
                         onClick = { onApply(WeekMode.EVERY_WEEK, customWeeks) },
                         label = { Text(stringResource(R.string.week_mode_every)) },
+                    )
+                    FilterChip(
+                        selected = weekMode == WeekMode.ODD_WEEKS,
+                        onClick = { onApply(WeekMode.ODD_WEEKS, customWeeks) },
+                        label = { Text(stringResource(R.string.week_mode_odd)) },
+                    )
+                    FilterChip(
+                        selected = weekMode == WeekMode.EVEN_WEEKS,
+                        onClick = { onApply(WeekMode.EVEN_WEEKS, customWeeks) },
+                        label = { Text(stringResource(R.string.week_mode_even)) },
                     )
                     FilterChip(
                         selected = weekMode == WeekMode.CUSTOM,
