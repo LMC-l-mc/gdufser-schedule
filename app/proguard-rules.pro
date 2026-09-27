@@ -19,3 +19,13 @@
 # Koin 4 基于 Kotlin反射构建依赖图,保留模块声明所需的元数据
 -dontwarn org.koin.**
 -keep class org.koin.core.** { *; }
+
+# ===== Kotlin 协程 kotlinx-coroutines =====
+# 主线程调度器由 ServiceLoader 反射查找 MainDispatcherFactory,混淆后必须保留类名
+-keepnames class kotlinx.coroutines.internal.MainDispatcherFactory {}
+-keepnames class kotlinx.coroutines.CoroutineExceptionHandler {}
+# 协程状态机依赖 volatile 字段,保留字段结构避免 R8 优化导致协程状态错乱
+-keepclassmembers class kotlinx.coroutines.** {
+    volatile <fields>;
+}
+-dontwarn kotlinx.coroutines.**
